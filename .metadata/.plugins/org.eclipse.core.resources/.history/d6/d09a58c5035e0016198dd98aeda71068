@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Pirates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] in={1,3,0,1};
+		System.out.println(answer(in));
+	}
+	public static int answer(int[] numbers){
+		ArrayList<Integer> basher = new ArrayList<Integer>();
+		int index=0;
+		for(int i=0;i<numbers.length;i++){
+			if(basher.indexOf(index)==-1){
+				basher.add(index);
+				index=numbers[index];
+			}
+			else{
+				return basher.size()-basher.indexOf(index);
+			}
+		}
+		
+	}
+
+}

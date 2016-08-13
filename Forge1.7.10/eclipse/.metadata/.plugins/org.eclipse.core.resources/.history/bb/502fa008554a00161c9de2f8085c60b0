@@ -1,0 +1,13 @@
+package com.a.amod;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class ItemHoming extends Item {
+	public ItemHoming(String name){
+		setUnlocalizedName(AMod.MODID+"_"+name);
+		setTextureName("images:"+name);
+		setCreativeTab(CreativeTabs.tabMisc);
+		
+	}
+}

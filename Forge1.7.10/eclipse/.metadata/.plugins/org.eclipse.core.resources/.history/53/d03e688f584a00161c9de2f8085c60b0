@@ -1,0 +1,31 @@
+package com.a.amod;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.projectile.EntitySnowball;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.World;
+
+public class EntityHoming extends EntitySnowball{
+
+	public EntityHoming(World world) {
+		super(world);
+		// TODO Auto-generated constructor stub
+	}
+	public EntityHoming(World world, EntityLivingBase entity){
+		super(world,entity);
+	}
+
+	public float getGravityVelocity(){
+		return 0.F;
+	}
+	public float func_70182_d(){
+		return 1.2F;
+	}
+	public float func_70183_g(){
+		return 0.F;
+	}
+	public void onUpdate(){
+		
+	}
+
+}

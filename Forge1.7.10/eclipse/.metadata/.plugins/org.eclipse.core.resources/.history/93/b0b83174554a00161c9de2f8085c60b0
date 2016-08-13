@@ -1,0 +1,14 @@
+package com.a.amod;
+
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+
+public class ModEntities {
+	@SidedProxy(clientSide="com.a.amod.ClientProxy",serverSide="com.a.amod.CommonProxy")
+	public static CommonProxy proxy;
+	public static void entities(){
+		//EntityRegistry.re
+		GameRegistry.registerTileEntity(TileEntityFurnDeuce.class, "tileEntityFurnDeuce");
+	}
+}

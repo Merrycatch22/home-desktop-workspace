@@ -1,0 +1,7 @@
+package com.a.amod;
+
+import net.minecraft.item.Item;
+
+public class ItemHoming extends Item {
+
+}
